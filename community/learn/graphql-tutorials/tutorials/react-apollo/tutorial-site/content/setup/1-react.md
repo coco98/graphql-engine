@@ -1,6 +1,7 @@
 ---
 title: "React"
 ---
+import BackendLink from "../config";
 
 Great! Now you are done learning about major concepts of GraphQL and how it can be useful for development. So let's get started on the application that we are going to build. 
 
@@ -9,7 +10,9 @@ Without wasting any more time, we can directly jump into the GraphQL code as we 
 This tutorial uses `create-react-app` with a few other essential modules for styles (`react-bootstrap`) , routing (`react-router`) and workflow tooling (`eslint`, `prettier`, `prop-types`). 
 Further this app uses `Auth0` for authentication.
 
-The backend is already built and available [here](https://backend.graphql-tutorials.org/v1alpha1/graphql). You will make use of this for testing and building your frontend app with graphql integration.
+The backend is already built and available <BackendLink title="here" />
+
+You will make use of this for testing and building your frontend app with graphql integration.
 
 #### Directory Structure
 
