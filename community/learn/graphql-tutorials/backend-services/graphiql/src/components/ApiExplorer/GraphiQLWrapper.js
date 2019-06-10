@@ -20,7 +20,8 @@ class GraphiQLWrapper extends Component {
       queries: null,
       onBoardingEnabled: false,
       explorerIsOpen: true,
-      query: ''
+      query: '',
+      headers: this.props.headers || []
     };
     const queryFile = this.props.queryParams
       ? this.props.queryParams.query_file
@@ -29,6 +30,12 @@ class GraphiQLWrapper extends Component {
       getRemoteQueries(queryFile, queries =>
         this.setState({ ...this.state, queries })
       );
+    }
+  }
+
+  componentDidUpdate() {
+    if (JSON.stringify(this.props.data.headers) !== JSON.stringify(this.state.headers)) {
+      this.introspect();
     }
   }
 
@@ -54,12 +61,14 @@ class GraphiQLWrapper extends Component {
     .then(response => response.json())
     .then(result => {
       this.setState({
+        headers: JSON.parse(JSON.stringify(headers)),
         schema: buildClientSchema(result.data)
       });
     })
     .catch(error => {
       this.setState({
-        schema: null
+        schema: null,
+        headers: JSON.parse(JSON.stringify(headers)),
       });
     })
   }
