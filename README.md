@@ -1,6 +1,7 @@
 # Hasura GraphQL Engine
 
 [![Docs](https://img.shields.io/badge/docs-v1.0-brightgreen.svg?style=flat)](https://docs.hasura.io)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcoco98%2Fgraphql-engine.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcoco98%2Fgraphql-engine?ref=badge_shield)
 <a href="https://github.com/hasura/graphql-engine/releases"><img src="https://img.shields.io/badge/release-v1.0.0alpha-brightgreen.svg?style=flat"/></a>
 [![CircleCI](https://circleci.com/gh/hasura/graphql-engine.svg?style=shield)](https://circleci.com/gh/hasura/graphql-engine)
 
@@ -94,3 +95,6 @@ Check out our [contributing guide](CONTRIBUTING.md) for more details.
 GraphQL Engine is available under the [GNU Affero General Public License v3](https://www.gnu.org/licenses/agpl-3.0.en.html) (AGPL-3.0), the same license as [MongoDB](https://www.mongodb.com/community/licensing). We have written more about what you can and cannot do under AGPL [here](https://gist.github.com/hasura-bot/9c36a0201a7563f7762b265a12b044d5).
 
 **Commercial licenses are available on request**. Please feel free to contact us at build@hasura.io or on our [website chat](https://hasura.io).
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcoco98%2Fgraphql-engine.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcoco98%2Fgraphql-engine?ref=badge_large)
